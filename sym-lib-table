@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name UNO_Bootloader_Burner-rescue)(type Legacy)(uri ${KIPRJMOD}/UNO_Bootloader_Burner-rescue.lib)(options "")(descr ""))
+)
