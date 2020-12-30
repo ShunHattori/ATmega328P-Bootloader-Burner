@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L controller-rescue:ATmega328-AU-MCU_Microchip_ATmega U1
+L UNO_Bootloader_Burner-rescue:ATmega328-AU-MCU_Microchip_ATmega-controller-rescue U1
 U 1 1 5FDA5711
 P 8650 2750
 F 0 "U1" H 8650 4165 50  0000 C CNN
@@ -57,7 +57,7 @@ GND
 Text GLabel 5200 2450 2    50   Input ~ 0
 RESET_FROM_BURNER
 $Comp
-L arduino:Arduino_Uno_Shield XA1
+L UNO_Bootloader_Burner-rescue:Arduino_Uno_Shield-arduino XA1
 U 1 1 5FD9FE21
 P 3900 2700
 F 0 "XA1" H 3900 4087 60  0000 C CNN
