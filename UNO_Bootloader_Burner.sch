@@ -13,17 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L UNO_Bootloader_Burner-rescue:ATmega328-AU-MCU_Microchip_ATmega-controller-rescue U1
-U 1 1 5FDA5711
-P 8650 2750
-F 0 "U1" H 8650 4165 50  0000 C CNN
-F 1 "ATmega328-AU-MCU_Microchip_ATmega" H 8650 4074 50  0000 C CNN
-F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 8650 2850 50  0001 C CIN
-F 3 "" H 8650 2400 50  0001 C CNN
-	1    8650 2750
-	1    0    0    -1  
-$EndComp
 NoConn ~ 7950 3600
 NoConn ~ 7950 3500
 NoConn ~ 7950 2300
@@ -57,7 +46,7 @@ GND
 Text GLabel 5200 2450 2    50   Input ~ 0
 RESET_FROM_BURNER
 $Comp
-L UNO_Bootloader_Burner-rescue:Arduino_Uno_Shield-arduino XA1
+L arduino:Arduino_Uno_Shield XA1
 U 1 1 5FD9FE21
 P 3900 2700
 F 0 "XA1" H 3900 4087 60  0000 C CNN
@@ -228,92 +217,58 @@ $EndComp
 $Comp
 L Connector:Conn_01x06_Female J1
 U 1 1 5FDBF626
-P 8800 4950
-F 0 "J1" H 8828 4926 50  0000 L CNN
-F 1 "Conn_01x06_Female" H 8828 4835 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 8800 4950 50  0001 C CNN
-F 3 "~" H 8800 4950 50  0001 C CNN
-	1    8800 4950
+P 9000 4950
+F 0 "J1" H 9028 4926 50  0000 L CNN
+F 1 "Conn_01x06_Female" H 9028 4835 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 9000 4950 50  0001 C CNN
+F 3 "~" H 9000 4950 50  0001 C CNN
+	1    9000 4950
 	1    0    0    -1  
 $EndComp
-Text GLabel 8600 4950 0    50   Input ~ 0
+Text GLabel 8800 5050 0    50   Input ~ 0
 SCK_M
-Text GLabel 8600 5050 0    50   Input ~ 0
+Text GLabel 8800 4950 0    50   Input ~ 0
 MOSI_M
-Text GLabel 8600 4750 0    50   Input ~ 0
+Text GLabel 8800 4850 0    50   Input ~ 0
 MISO_M
-Text GLabel 8600 5150 0    50   Input ~ 0
+Text GLabel 8800 5250 0    50   Input ~ 0
 RESET_FROM_BURNER
 Wire Wire Line
-	8600 4850 8350 4850
+	8800 4750 8550 4750
 $Comp
 L power:VCC #PWR0107
 U 1 1 5FDC2865
-P 8350 4850
-F 0 "#PWR0107" H 8350 4900 30  0001 C CNN
-F 1 "VCC" V 8350 4937 50  0000 L CNN
-F 2 "" H 8350 4850 60  0000 C CNN
-F 3 "" H 8350 4850 60  0000 C CNN
-	1    8350 4850
+P 8550 4750
+F 0 "#PWR0107" H 8550 4800 30  0001 C CNN
+F 1 "VCC" V 8550 4837 50  0000 L CNN
+F 2 "" H 8550 4750 60  0000 C CNN
+F 3 "" H 8550 4750 60  0000 C CNN
+	1    8550 4750
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	8600 5250 8350 5250
+	8800 5150 8550 5150
 $Comp
 L power:GND #PWR0108
 U 1 1 5FDC33E1
-P 8350 5250
-F 0 "#PWR0108" H 8350 5250 30  0001 C CNN
-F 1 "GND" H 8350 5180 30  0001 C CNN
-F 2 "" H 8350 5250 60  0000 C CNN
-F 3 "" H 8350 5250 60  0000 C CNN
-	1    8350 5250
+P 8550 5150
+F 0 "#PWR0108" H 8550 5150 30  0001 C CNN
+F 1 "GND" H 8550 5080 30  0001 C CNN
+F 2 "" H 8550 5150 60  0000 C CNN
+F 3 "" H 8550 5150 60  0000 C CNN
+	1    8550 5150
 	0    1    1    0   
 $EndComp
 $Comp
 L Connector:Conn_01x06_Female J2
 U 1 1 5FDC770E
-P 8800 5700
-F 0 "J2" H 8828 5676 50  0000 L CNN
-F 1 "Conn_01x06_Female" H 8828 5585 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical" H 8800 5700 50  0001 C CNN
-F 3 "~" H 8800 5700 50  0001 C CNN
-	1    8800 5700
+P 9000 5650
+F 0 "J2" H 9028 5626 50  0000 L CNN
+F 1 "Conn_01x06_Female" H 9028 5535 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical" H 9000 5650 50  0001 C CNN
+F 3 "~" H 9000 5650 50  0001 C CNN
+	1    9000 5650
 	1    0    0    -1  
-$EndComp
-Text GLabel 8600 5700 0    50   Input ~ 0
-SCK_M
-Text GLabel 8600 5800 0    50   Input ~ 0
-MOSI_M
-Text GLabel 8600 5500 0    50   Input ~ 0
-MISO_M
-Text GLabel 8600 5900 0    50   Input ~ 0
-RESET_FROM_BURNER
-Wire Wire Line
-	8600 5600 8350 5600
-$Comp
-L power:VCC #PWR0109
-U 1 1 5FDC7719
-P 8350 5600
-F 0 "#PWR0109" H 8350 5650 30  0001 C CNN
-F 1 "VCC" V 8350 5687 50  0000 L CNN
-F 2 "" H 8350 5600 60  0000 C CNN
-F 3 "" H 8350 5600 60  0000 C CNN
-	1    8350 5600
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	8600 6000 8350 6000
-$Comp
-L power:GND #PWR0110
-U 1 1 5FDC7720
-P 8350 6000
-F 0 "#PWR0110" H 8350 6000 30  0001 C CNN
-F 1 "GND" H 8350 5930 30  0001 C CNN
-F 2 "" H 8350 6000 60  0000 C CNN
-F 3 "" H 8350 6000 60  0000 C CNN
-	1    8350 6000
-	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R2
@@ -428,10 +383,10 @@ Wire Wire Line
 Wire Wire Line
 	7800 2400 7800 2350
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR0109
 U 1 1 5FDBE539
 P 7800 2350
-F 0 "#PWR?" H 7800 2200 50  0001 C CNN
+F 0 "#PWR0109" H 7800 2200 50  0001 C CNN
 F 1 "VCC" H 7815 2523 50  0000 C CNN
 F 2 "" H 7800 2350 50  0001 C CNN
 F 3 "" H 7800 2350 50  0001 C CNN
@@ -445,41 +400,70 @@ Wire Wire Line
 Connection ~ 7800 2400
 Wire Wire Line
 	7250 2100 7250 2000
-$Comp
-L power:GND #PWR0104
-U 1 1 5FDBAF43
-P 7450 1850
-F 0 "#PWR0104" H 7450 1850 30  0001 C CNN
-F 1 "GND" H 7450 1780 30  0001 C CNN
-F 2 "" H 7450 1850 60  0000 C CNN
-F 3 "" H 7450 1850 60  0000 C CNN
-	1    7450 1850
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	7250 1700 7250 1650
-Wire Wire Line
-	6800 1850 6800 1650
-Wire Wire Line
-	6800 1850 6800 2100
-Connection ~ 6800 1850
-$Comp
-L Device:Crystal_GND24 Y1
-U 1 1 5FDB7F9F
-P 7250 1850
-F 0 "Y1" V 7204 2094 50  0000 L CNN
-F 1 "Crystal_GND24" V 7295 2094 50  0000 L CNN
-F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm" H 7250 1850 50  0001 C CNN
-F 3 "~" H 7250 1850 50  0001 C CNN
-	1    7250 1850
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7050 1850 6800 1850
 Wire Wire Line
 	7550 1650 7550 1800
 Wire Wire Line
 	7550 1800 7950 1800
 Wire Wire Line
 	7250 1650 7550 1650
+Text GLabel 8800 5750 0    50   Input ~ 0
+SCK_M
+Text GLabel 8800 5650 0    50   Input ~ 0
+MOSI_M
+Text GLabel 8800 5550 0    50   Input ~ 0
+MISO_M
+Text GLabel 8800 5950 0    50   Input ~ 0
+RESET_FROM_BURNER
+Wire Wire Line
+	8800 5450 8550 5450
+$Comp
+L power:VCC #PWR0110
+U 1 1 600DB96A
+P 8550 5450
+F 0 "#PWR0110" H 8550 5500 30  0001 C CNN
+F 1 "VCC" V 8550 5537 50  0000 L CNN
+F 2 "" H 8550 5450 60  0000 C CNN
+F 3 "" H 8550 5450 60  0000 C CNN
+	1    8550 5450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8800 5850 8550 5850
+$Comp
+L power:GND #PWR0114
+U 1 1 600DB971
+P 8550 5850
+F 0 "#PWR0114" H 8550 5850 30  0001 C CNN
+F 1 "GND" H 8550 5780 30  0001 C CNN
+F 2 "" H 8550 5850 60  0000 C CNN
+F 3 "" H 8550 5850 60  0000 C CNN
+	1    8550 5850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Crystal Y1
+U 1 1 600EE4C4
+P 7250 1850
+F 0 "Y1" V 7204 1981 50  0000 L CNN
+F 1 "Crystal" V 7295 1981 50  0000 L CNN
+F 2 "Crystal:Crystal_HC18-U_Vertical" H 7250 1850 50  0001 C CNN
+F 3 "~" H 7250 1850 50  0001 C CNN
+	1    7250 1850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6800 1650 6800 2100
+$Comp
+L UNO_Bootloader_Burner-rescue:ATmega328-AU-MCU_Microchip_ATmega-controller-rescue U1
+U 1 1 5FDA5711
+P 8650 2750
+F 0 "U1" H 8650 4165 50  0000 C CNN
+F 1 "ATmega328-AU-MCU_Microchip_ATmega" H 8650 4074 50  0000 C CNN
+F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 8650 2850 50  0001 C CIN
+F 3 "" H 8650 2400 50  0001 C CNN
+	1    8650 2750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
